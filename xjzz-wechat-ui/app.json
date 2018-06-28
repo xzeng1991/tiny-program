@@ -1,0 +1,49 @@
+{
+  "enablePullDownRefresh": true,
+  "pages": [
+    "pages/index/index",
+    "pages/personal/address/address-list/address-list",
+    "pages/personal/address/address-add/address-add",
+    "pages/personal/order/logistics/logistics",
+    "pages/personal/address/test/test",
+    "pages/personal/order/order-list/order-list",
+    "pages/pay-result/pay-result",
+    "pages/confirm-order/confirm-order",
+    "pages/product-detail/product-detail",
+    "pages/test/test",
+    "pages/personal/address/address-reset/address-reset",
+    "pages/personal/personal-center/personal-center",
+    "pages/personal/order/order-details/order-details"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#7f7f7f",
+    "selectedColor": "#b4282d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/icons/21.png",
+        "selectedIconPath": "/assets/icons/20.png"
+      },
+      {
+        "pagePath": "pages/personal/personal-center/personal-center",
+        "text": "个人",
+        "iconPath": "/assets/icons/23.png",
+        "selectedIconPath": "/assets/icons/22.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "/assets/icons/23.png",
+        "selectedIconPath": "/assets/icons/22.png"
+      }
+    ]
+  }
+}

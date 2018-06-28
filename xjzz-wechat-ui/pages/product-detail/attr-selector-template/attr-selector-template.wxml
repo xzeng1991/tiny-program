@@ -1,0 +1,5 @@
+<template name="attrSelector">
+  <view class="attr-selector">
+    <text class="attr-name">{{item}}</text>
+  </view>
+</template>

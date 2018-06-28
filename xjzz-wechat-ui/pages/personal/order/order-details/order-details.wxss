@@ -1,0 +1,142 @@
+@import '/pages/personal/order/order-list/order-list.wxss';
+
+/*状态*/
+
+.order-details-top {
+  color: #b4282d;
+  text-align: center;
+  background: #f7e9ea;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+/*拼单*/
+
+.order-collage {
+  padding: 0 30rpx;
+}
+
+.order-collt {
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.collt-box1 {
+  height: 127rpx;
+  overflow: hidden;
+}
+
+.order-collt2 {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-colltime {
+  font-size: 20rpx;
+  color: #7f7f7f;
+  margin-top: 3rpx;
+}
+
+.order-button2 {
+  font-size: 24rpx;
+  height: 46rpx;
+  width: 120rpx;
+  text-align: center;
+  padding: 0;
+  border-radius: 3rpx;
+  background: #b4282d;
+  color: #fff;
+  line-height: 46rpx;
+  margin: 0;
+}
+
+.collt-box1 {
+  display: flex;
+  
+  align-items: center;
+}
+
+.collt-person {
+  width: 12.5%;
+  text-align: center;
+}
+
+.collt-person image {
+  display: inline-block;
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 100%;
+}
+
+/*地址*/
+
+.order-addr {
+  padding: 25rpx 88rpx 30rpx 25rpx;
+  background: #fff;
+  position: relative;
+}
+
+.order-addr1 {
+  display: flex;
+  justify-content: space-between;
+  color: #1e1e1e;
+}
+
+.order-addr2 {
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #7f7f7f;
+  margin-top: 15rpx;
+}
+
+.addr-arr {
+  display: block;
+  height: 20rpx;
+  width: 11rpx;
+  position: absolute;
+  top: 50%;
+  right: 30rpx;
+  transform: translateY(-50%);
+}
+
+/*价格*/
+
+.order-box5 {
+  overflow: hidden;
+}
+
+.order-box6 {
+  padding: 25rpx 30rpx;
+  color: #5a5a5a;
+  line-height: 48rpx;
+}
+
+.order-box7 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-box8 {
+  margin: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 105rpx;
+  border-top: 1px solid #f0f0f0;
+}
+
+/*底部*/
+
+.order-box4 {
+  border-top: 1px solid #f0f0f0;
+  padding: 18rpx 30rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

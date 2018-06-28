@@ -1,0 +1,5 @@
+<template name="searchTag">
+  <view class="search-tag">
+    <text class="tag-name">{{item}}</text>
+  </view>
+</template>

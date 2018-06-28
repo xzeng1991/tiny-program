@@ -1,0 +1,48 @@
+<import src="./search-tag-template/search-tag-template.wxml" />
+<import src="../index/product-item-template/product-item-template.wxml" />
+
+<view class="search-product-container">
+  <view class="search-bar-container">
+    <view class="search-input-container">
+      <input placeholder="请输入关键字" confirm-type="search" class="search-input" value="{{title}}" bindconfirm="onSearch" bindinput="onSearchInput" />
+    </view>
+    <navigator class="cancel-text" open-type="navigateBack" wx:if="{{productList.length===0}}">取消</navigator>
+    <view class="cancel-text" wx:else catch:tap="cancelSearch">
+      <image src="/assets/icons/39.png"></image>
+    </view>
+  </view>
+  <view class="search-tips" wx:if="{{productList.length===0}}">
+    <view class="search-title">最近搜索</view>
+    <view class="search-tag-container">
+      <block wx:for="{{lastestSearch}}" wx:key="item">
+        <template is="searchTag" data="{{item}}"></template>
+      </block>
+    </view>
+  </view>
+  <view class="search-tips" wx:if="{{productList.length===0}}">
+    <view class="search-title">热门搜索</view>
+    <view class="search-tag-container">
+      <block wx:for="{{hotSearch}}" wx:key="item">
+        <template is="searchTag" data="{{item}}"></template>
+      </block>
+    </view>
+  </view>
+  <view class="product-list-container" wx:else>
+    <view class="product-list-sort-container">
+      <view class="sort-btn">
+        <text>综合</text>
+      </view>
+      <view class="sort-btn">
+        <text>销量</text>
+      </view>
+      <view class="sort-btn">
+        <text>价格</text>
+      </view>
+    </view>
+    <view class="product-container">
+      <block wx:for="{{productList}}" wx:key="{{id}}">
+        <template is="productItem" data="{{...item}}" />
+      </block>
+    </view>
+  </view>
+</view>

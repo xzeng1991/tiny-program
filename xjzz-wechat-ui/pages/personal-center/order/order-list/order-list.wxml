@@ -1,0 +1,48 @@
+<!--order-list.wxml-->
+<view>
+  <!--分类-->
+  <view class='order-top bg-f'>
+    <view class='order-top2 order-tactive'>全部</view>
+    <view class='order-top2'>待付款</view>
+    <view class='order-top2'>待发货</view>
+    <view class='order-top2'>待收货</view>
+    <view class='order-top2'>待评价</view>
+  </view>
+  <!--列表-->
+  <view class='order-list'>
+    <!--单条订单-->
+    <block wx:for="{{orderlist}}" wx:key="key">
+      <view class='order-list2' data-orderid="{{item.orderId}}" catchtap="redictDetail">
+        <view class='order-box1'>
+          <text>{{item.createTime}}</text>
+          <text>{{item.orderStatus}}</text>
+        </view>
+        <view class='order-box2'>
+          <!--单条商品-->
+          <view class='order-good'>
+            <image class='order-img1' src='{{item.productCover}}' mode="aspectFit"></image>
+            <view class='order-attr'>
+              <view class='order-tit'>{{item.productTitle}}</view>
+              <view class='order-attr2'>{{item.productSkuAttributeValues}}</view>
+              <view class='orderr-price2'>
+                <view class='fs-32'>￥{{item.productPrice}}</view>
+                <text class='order-num'>X{{item.productCount}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!--订单状态-->
+        <view class='order-box3'>
+          <view class='order-num2'>
+            <text class='mr40'>共<text class='padd10'>{{item.productCount}}</text>件</text>
+            <text>应付金额：<text class='order-num3'>￥{{item.productPrice}}</text></text>
+          </view>
+          <view class='order-butt'>
+            <view class='order-button order-button-red'>立即付款</view>
+            <!-- <view class='order-button order-button-grey'>取消订单</view> -->
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

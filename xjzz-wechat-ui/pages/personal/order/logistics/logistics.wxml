@@ -1,0 +1,35 @@
+<!--pages/personal/order/logistics/logistics.wxml-->
+<view class='logistics-box1'>
+  <image src='/assets/images/personal/9.png'></image>
+  <view class='logistics-company'>
+    <view>
+      <text class='color-7f'>物流公司：</text>
+      <text>EMS</text>
+    </view>
+    <view>
+      <text class='color-7f'>物流单号：</text>
+      <text>1194839142414</text>
+    </view>
+  </view>
+</view>
+<view class='logistics-box2'>
+  <view class='logistics-title'>订单跟踪</view>
+  <view class='logistics-box3'>
+    <view class='logistics-inform logistics-active'>
+      <view>离开广州市 发往南昌市（经转）</view>
+      <view class='logistics-inform-time'>2018.05.10 08:10</view>
+    </view>
+    <view class='logistics-inform'>
+      <view>离开广州市 发往南昌市（经转）</view>
+      <view class='logistics-inform-time'>2018.05.10 08:10</view>
+    </view>
+    <view class='logistics-inform'>
+      <view>离开广州市 发往南昌市（经转）</view>
+      <view class='logistics-inform-time'>2018.05.10 08:10</view>
+    </view>
+    <view class='logistics-inform'>
+      <view>离开广州市 发往南昌市（经转）</view>
+      <view class='logistics-inform-time'>2018.05.10 08:10</view>
+    </view>
+  </view>
+</view>

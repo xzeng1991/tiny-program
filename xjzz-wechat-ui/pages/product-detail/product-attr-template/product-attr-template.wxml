@@ -1,0 +1,12 @@
+<import src="../attr-selector-template/attr-selector-template.wxml" />
+
+<template name="productAttr">
+  <view class="product-attr-container">
+    <text class="product-attr-title">{{title}}</text>
+    <view class="product-attr-selector">
+      <block wx:for="{{attr}}" wx:key="item">
+        <template is="attrSelector" data="{{item}}"></template>
+      </block>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,52 @@
+<!--personal-center.wxml-->
+<view>
+  <!--个人信息-->
+  <view class="personal-box1" style='background-image: url(/assets/images/personal/1.jpg);'>
+    <image src='{{user.avatar}}' class='personal-img1'></image>
+    <view class='personal-box2'>
+      <open-data type="userNickName" class='personal-name'></open-data>
+      <view class='personal-name'>{{user.userName}}</view>
+      <text>微信用户</text>
+    </view>
+  </view>
+  <!--我的订单-->
+  <view class='personal-box3 bg-f'>
+    <view class='personal-box4' catchtap="redictDetail">
+      <text class='personal-dd'>我的订单</text>
+      <image class='person-arr' src="/assets/images/icon/arr.png"></image>
+    </view>
+    <view class='personal-box5'>
+      <view class='personal-dd2'>
+        <image class='person-dimg' src="/assets/images/icon/11.png"></image>
+        <text class='personal-dd3'>待付款</text>
+      </view>
+      <view class='personal-dd2'>
+        <image class='person-dimg' src="/assets/images/icon/10.png"></image>
+        <text class='personal-dd3'>待发货</text>
+      </view>
+      <view class='personal-dd2'>
+        <image class='person-dimg' src="/assets/images/icon/12.png"></image>
+        <text class='personal-dd3'>待收货</text>
+      </view>
+      <view class='personal-dd2'>
+        <image class='person-dimg' src="/assets/images/icon/13.png"></image>
+        <text class='personal-dd3'>待评价</text>
+      </view>
+    </view>
+  </view>
+  <!--其他栏目-->
+  <view class='person-other' catchtap="address">
+    <view class='person-other2'>
+      <image class='person-oimg' src="/assets/images/icon/14.png"></image>
+      <text class='personal-dd'>地址管理</text>
+    </view>
+    <image class='person-arr' src="/assets/images/icon/arr.png"></image>
+  </view>
+  <view class='person-other'>
+    <view class='person-other2'>
+      <image class='person-oimg' src="/assets/images/icon/15.png"></image>
+      <text class='personal-dd'>联系客服</text>
+    </view>
+    <image class='person-arr' src="/assets/images/icon/arr.png"></image>
+  </view>
+</view>

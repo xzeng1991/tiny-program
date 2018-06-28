@@ -1,0 +1,58 @@
+<import src="./service-icon-template/service-icon-template.wxml" />
+<import src="./modal-template/modal-template.wxml" />
+
+<view class="product-detail-container">
+  <view class="product-detail-swiper-container">
+    <swiper autoplay="{{autoplay}}" indicator-dots indicator-active-color="#b4282d">
+      <block wx:for="{{productDetail.imageUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="product-detail-content">
+    <text class="product-detail-title">{{productDetail.title}}</text>
+    <text class="product-detail-desc">{{productDetail.desc}}</text>
+    <view class="product-detail-price-and-sales">
+      <text class="product-detail-price">￥{{productDetail.defaultPrice}}</text>
+      <text class="product-detail-sales">已拼{{productDetail.sales}}件 {{productDetail.groupNum}}人拼单</text>
+    </view>
+  </view>
+  <view class="service-icon-container">
+    <block wx:for="{{services}}" wx:key="{{title}}">
+      <template is="service-icon" data="{{...item}}" />
+    </block>
+  </view>
+  <view class="group-detail">
+    <view class="group-detail-title-container">
+      <text class="group-detail-title">已有小伙伴发起团购，您可直接参与哦！</text>
+    </view>
+  </view>
+  <view class="detail-container">
+    <view class="detail-title-container">
+      <text class="detail-title">产品详情</text>
+    </view>
+    <view class="detail-content">
+      <block wx:for="{{productDetail.content}}" wx:key="{{item}}">
+        <image src="{{item}}" mode="aspectFit" />
+      </block>
+    </view>
+  </view>
+  <view class="fixed-footer">
+    <navigator class="return-home" url="/pages/index/index" open-type="switchTab">
+      <image src="/assets/icons/5.png" />
+    </navigator>
+    <navigator class="custom-service">
+      <image src="/assets/icons/6.png" />
+    </navigator>
+    <view wx:if="{{!modalVisible}}" class="buy-now" catch:tap="toggleModal">
+      <text class="buy-now-text">去拼团（￥{{productDetail.defaultPrice}}）</text>
+    </view>
+    <view wx:else class="buy-now" catch:tap="confirmOrder">
+      <text class="buy-now-text">确认下单</text>
+    </view>
+  </view>
+  <template is="modal" data="{{modalVisible, price:productDetail.defaultPrice, stock:productDetail.stock, productAttr, selectorNum, cover}}"
+  />
+</view>

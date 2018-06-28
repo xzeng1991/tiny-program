@@ -1,0 +1,18 @@
+<template name="productItem">
+  <view class="product-item-container">
+    <view class="product-item">
+      <view class="product-item-img">
+        <image src="{{cover}}" mode="aspectFit" />
+      </view>
+      <view class="product-item-content">
+        <text class="product-item-title">{{title}}</text>
+        <text class="product-item-desc">{{description}}</text>
+        <view class="product-item-footer">
+          <text class="product-item-price">￥{{defaultPrice}}</text>
+          <text class="product-item-num">{{num}}人拼单</text>
+          <navigator class="product-item-btn" url="/pages/product-detail/product-detail?id={{id}}">去拼单</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

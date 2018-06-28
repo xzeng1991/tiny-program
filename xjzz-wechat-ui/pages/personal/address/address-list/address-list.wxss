@@ -1,0 +1,92 @@
+@import '/pages/personal/order/order-details/order-details.wxss';
+
+.address-list {
+  margin: 0 20rpx 120rpx;
+}
+
+.address-list2 {
+  margin-top: 20rpx;
+  padding: 0 30rpx;
+  background: #fff;
+}
+
+.address-box1 {
+  padding: 30rpx 0;
+}
+.order-addr5{
+  display: flex;
+  align-items: center;
+}
+.order-mr{
+  font-size: 21rpx;
+  margin-left: 15rpx;
+  color: #b4282d;
+  border: 1rpx solid #b4282d;
+  width: 54rpx;
+  text-align: center;
+  line-height: 28rpx;
+}
+/*地址操作*/
+
+.address-operat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  overflow: hidden;
+  border-top: 1px solid #f0f0f0;
+}
+
+.address-delete {
+  display: flex;
+  align-items: center;
+  color: #1e1e1e;
+  height: 100%;
+}
+
+.address-delete image {
+  width: 30rpx;
+  height: 34rpx;
+  margin-right: 8rpx;
+}
+
+.address-radio {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.address-radio radio {
+  transform: scale(0.75);
+}
+
+.address-add {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #b4282d;
+  background: #fff;
+}
+/*无订单*/
+
+.empty1 {
+  text-align: center;
+  color: #1e1e1e;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-70%);
+  width: 100%;
+}
+
+.empty1 image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 25rpx;
+}

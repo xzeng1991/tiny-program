@@ -1,0 +1,79 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/*胡薇写的公共样式*/
+
+view, text, icon, img {
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #1e1e1e;
+}
+
+.bg-f {
+  background: #fff !important;
+}
+
+.mt20 {
+  margin-top: 20rpx;
+}
+
+.mr20 {
+  margin-right: 20rpx;
+}
+
+.color-red {
+  color: #b4282d;
+}
+.color-7f {
+  color: #7f7f7f;
+}
+.price-style {
+  color: #b4282d;
+  font-weight: bold;
+}
+
+.padd30 {
+  padding: 0 30rpx;
+}
+
+.color-hui {
+  color: #7f7f7f;
+}
+
+.fs-20 {
+  font-size: 20rpx;
+}
+
+.fs-24 {
+  font-size: 24rpx;
+}
+
+.fs-28 {
+  font-size: 28rpx;
+}
+
+.fs-30 {
+  font-size: 30rpx;
+}
+
+.fs-32 {
+  font-size: 32rpx;
+}
+
+.hei-120 {
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.mr40 {
+  margin-right: 40rpx;
+}

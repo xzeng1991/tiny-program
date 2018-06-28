@@ -1,0 +1,15 @@
+@import '../attr-selector-template/attr-selector-template.wxss';
+
+.product-attr-container {
+  margin-bottom: 60rpx;
+}
+
+.product-attr-title {
+  font-size: 28rpx;
+  color: #3c3c3c;
+}
+
+.product-attr-selector {
+  display: flex;
+  margin-top: 24rpx;
+}

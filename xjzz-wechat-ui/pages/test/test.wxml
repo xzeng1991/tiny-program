@@ -1,0 +1,8 @@
+<view>
+  <view>hello ：{{ msg }}</view>
+  <view>获取 token : {{ token }}</view>
+  <view>支付参数 : {{ paymentParams }}</view>
+  
+  <button catch:tap="getInfo" type="primary">获取数据</button>
+  <button catch:tap="pay" type="warn">支付</button>
+</view>

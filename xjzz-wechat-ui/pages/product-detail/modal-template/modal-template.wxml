@@ -1,0 +1,38 @@
+<import src="../product-attr-template/product-attr-template.wxml" />
+
+<template name="modal">
+  <view class="modal-container" wx:if="{{modalVisible}}">
+    <view class="modal-bg" catch:tap="toggleModal"></view>
+    <view class="modal">
+      <view class="close-icon" catch:tap="toggleModal">
+        <image src="/assets/icons/39.png" />
+      </view>
+      <view class="modal-header">
+        <view class="modal-image">
+          <image src="{{cover}}"></image>
+        </view>
+        <view class="modal-product-content">
+          <text class="modal-product-price">￥{{price}}</text>
+          <text class="modal-product-stock">库存：{{stock}}件</text>
+          <text class="modal-product-selected">礼盒精装；350g</text>
+        </view>
+      </view>
+      <view class="modal-attr">
+        <block wx:for="{{productAttr}}" wx:key="title">
+          <template is="productAttr" data="{{...item}}"></template>
+        </block>
+        <view class="product-attr-container">
+          <text class="product-attr-title">数量</text>
+          <view class="product-attr-selector">
+            <view class="attr-selector" style="display:flex;margin:0;padding:0;">
+              <view class="minus-num-btn" catch:tap="minusNum">-</view>
+              <input type="number" class="number-input" value="{{selectorNum}}" bindinput="selectorNumInput" bindblur="selectorNumBlur"
+              />
+              <view class="add-num-btn" catch:tap="addNum">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,16 @@
+.service {
+  height: 24rpx;
+}
+
+.service-icon {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 12rpx;
+  vertical-align: middle;
+}
+
+.service-title {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #7f7f7f;
+}

@@ -1,0 +1,6 @@
+<template name="service-icon">
+  <view class="service">
+    <image class="service-icon" src="{{icon}}" />
+    <text class="service-title">{{title}}</text>
+  </view>
+</template>

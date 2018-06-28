@@ -1,0 +1,127 @@
+page {
+  background: #f5f5f5;
+}
+
+.address-box2 {
+  padding: 0 30rpx;
+  background: #fff;
+}
+
+.address-box3 {
+  height: 105rpx;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-input {
+  width: 100%;
+  height: 100%;
+  color: #1e1e1e;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.address-color {
+  color: #c8c8c8;
+}
+
+.address-area {
+  height: 200rpx;
+  width: 100%;
+  resize: none;
+  padding: 30rpx 0;
+  line-height: 30rpx;
+}
+
+.address-submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #b4282d;
+  border-radius: 0;
+  line-height: 100rpx;
+  letter-spacing: 10rpx;
+}
+.address-isDefault{
+  transform: scale(0.8);
+}
+/*弹出层*/
+.address-select{
+  display: flex;
+  align-items: center;
+  color: #1e1e1e;
+  height: 100%;
+  width: 130rpx;
+}
+.address-select image{
+ width: 26rpx;
+ height: 34rpx;
+ margin-right: 8rpx;
+}
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.state-item {
+  width: 20%;
+  height: 70rpx;
+  font-size: 11pt;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 2rpx solid #ddd;
+}
+
+.border.state-item {
+  border: 2rpx solid #c4245c;
+}
+
+.date {
+  min-width: 40%;
+  display: flex;
+  font-size: 11pt;
+  color: #bdbdbd;
+  align-items: center;
+}
+
+.date-btn {
+  min-width: 80%;
+  font-size: 12pt;
+  background-color: #c4245c;
+  color: #fff;
+  position: fixed;
+}
+
+.picker-view {
+  width: 100%;
+  display: flex;
+  z-index: 12;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 40vh;
+}
+
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+@import '../product-attr-template/product-attr-template.wxss';
+
+.modal-container,
+.modal-bg,
+.modal {
+  position: fixed;
+  left: 0;
+  bottom: 96rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bg {
+  background:rgba(0,0,0,.5);
+}
+
+.modal {
+  height: auto;
+  background: #fff;
+  padding: 30rpx 30rpx 50rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 72rpx;
+  height: 72rpx;
+  padding-top: 12rpx;
+  text-align: center;
+}
+
+.close-icon image {
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: middle;
+}
+
+.modal-header {
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.modal-image {
+  margin-right: 24rpx;
+}
+
+.modal-image,
+.modal-image image {
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.modal-product-content {
+  height: 150rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-product-price {
+  font-size: 39rpx;
+  color: #b4282d;
+}
+
+.modal-product-price,
+.modal-product-stock {
+  margin-bottom: 10rpx;
+}
+
+.modal-product-stock,
+.modal-product-selected {
+  font-size: 28rpx;
+  color: #7f7f7f;
+}
+
+.number-input {
+  width: 80rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #1e1e1e;
+  text-align: center;
+}
+
+.add-num-btn, .minus-num-btn {
+  width: 50rpx;
+  text-align: center;
+}
+
+.add-num-btn {
+  border-left: 1px solid #e6e6e6;
+}
+
+.minus-num-btn {
+  border-right: 1px solid #e6e6e6;
+}

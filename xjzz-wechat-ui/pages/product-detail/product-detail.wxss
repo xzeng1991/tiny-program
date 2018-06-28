@@ -1,0 +1,139 @@
+@import "./service-icon-template/service-icon-template.wxss";
+@import "./modal-template/modal-template.wxss";
+
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.product-detail-swiper-container, 
+.product-detail-swiper-container swiper,
+.product-detail-swiper-container image {
+  width: 100%;
+  height: 750rpx;
+}
+
+.product-detail-content {
+  background: #fff;
+  padding: 36rpx 30rpx 30rpx 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-title {
+  color: #1e1e1e;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}
+
+.product-detail-desc {
+  font-size: 28rpx;
+  color: #7f7f7f;
+  margin-bottom: 30rpx;
+}
+
+.product-detail-price-and-sales {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 45rpx;
+}
+
+.product-detail-price {
+  font-size: 45rpx;
+  color: #b4282d;
+  line-height: 45rpx;
+  font-weight: bold;
+}
+
+.product-detail-sales {
+  font-size: 28rpx;
+  color: #7f7f7f;
+  line-height: 45rpx;
+}
+
+.service-icon-container {
+  padding: 20rpx 30rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.group-detail {
+  height: 246rpx;
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.group-detail-title-container {
+  height: 96rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.group-detail-title {
+  font-size: 28rpx;
+  color: #1e1e1e;
+  line-height: 96rpx;
+}
+
+.detail-container {
+  background: #fff;
+  margin-bottom: 96rpx;
+}
+
+.detail-title-container {
+  height: 105rpx;
+  text-align: center;
+}
+
+.detail-title {
+  font-size: 28rpx;
+  color: #1e1e1e;
+  line-height: 105rpx;
+  font-weight: bold;
+}
+
+.detail-content image {
+  width: 100%;
+}
+
+.fixed-footer {
+  position: fixed;
+  height: 97rpx;
+  width: 100%;
+  border-top: #f0f0f0 1px solid;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.return-home, 
+.custom-service {
+  width: 99rpx;
+  border-right: #f0f0f0 1px solid;
+  padding: 26rpx 24rpx;
+  text-align: center;
+}
+
+.return-home image,
+.custom-service image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.buy-now {
+  background: #b4282d;
+  text-align: center;
+  width: 100%;
+}
+
+.buy-now-text {
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 96rpx;
+}

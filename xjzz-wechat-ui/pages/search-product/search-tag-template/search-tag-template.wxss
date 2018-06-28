@@ -1,0 +1,13 @@
+.search-tag {
+  height: 50rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1px solid #e6e6e6;
+  padding: 0 20rpx;
+}
+
+.tag-name {
+  font-size: 24rpx;
+  color: #3c3c3c;
+  line-height: 50rpx;
+}

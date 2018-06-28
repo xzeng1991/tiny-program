@@ -1,0 +1,45 @@
+11<view class='address-list'>
+  <radio-group>
+    <block wx:for="{{addresslist}}" wx:key="key">
+      <!--单个地址-->
+      <view class='address-list2' catchtap="redictDetail" data-addressId="{{item.id}}">
+        <!--信息  -->
+        <view class='order-addr address-box1'>
+          <view class='order-addr1'>
+            <view class='order-addr5'>
+              <text class='fs-30'>{{item.contactor}}</text>
+              <block wx:if="{{item.isDefault=='Y'}}">
+                <text class='order-mr'>默认</text>
+              </block>
+            </view>
+            <text>{{item.mobile}}</text>
+          </view>
+          <view class='order-addr2'>{{item.address}}{{item.addressDetail}}</view>
+        </view>
+        <!--默认-->
+        <view class='address-operat'>
+          <label class='address-radio' catchtap="isDefault" wx:if="{item.isDefault==Y}" data-addressId="{{item.id}}">
+            <block wx:if="{{item.isDefault=='Y'}}">
+              <radio value='{{item.id}}' color='#b4282d' checked='checked' />
+            </block>
+            <block wx:elif="{{item.isDefault=='N'}}">
+              <radio value='{{item.id}}' color='#b4282d' />
+            </block>
+            <text>默认地址</text>
+          </label>
+          <label class='address-radio' catchtap="isDefault" wx:else data-addressId="{{item.id}}">
+            <radio value='{{item.id}}' color='#b4282d' />
+            <text>默认地址</text>
+          </label>
+
+          <view class='address-delete' catchtap="delete" data-addressId="{{item.id}}">
+            <image src='/assets/images/icon/8.png'></image>
+            <text>删除</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </radio-group>
+</view>
+<!--增加-->
+<view class='address-add' catchtap="addaddress">新增地址</view>

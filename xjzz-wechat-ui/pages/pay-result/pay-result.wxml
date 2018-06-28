@@ -1,0 +1,24 @@
+<view class="pay-result-container">
+  <view class="pay-result">
+    <text class="result-text">支付成功（元）</text>
+    <text class="pay-price">256.00</text>
+    <view class="btn-group">
+      <navigator class="return-home" url="/pages/index/index" open-type="switchTab">返回首页</navigator>
+      <view class="see-order">查看订单</view>
+    </view>
+  </view>
+  <view class="order-info">
+    <view class="info-list">
+      <text class="info-title">订单编号</text>
+      <text class="info-content">4851245789512</text>
+    </view>
+    <view class="info-list">
+      <text class="info-title">交易方式</text>
+      <text class="info-content">微信</text>
+    </view>
+    <view class="info-list" style="border-bottom:0;">
+      <text class="info-title">下单时间</text>
+      <text class="info-content">2018.05.12 08:20:45</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/demo/demo.wxss */
+.btn-area {
+  display: flex;
+  margin-top: 24rpx;
+}
+
+.btn-submit{
+  width: 136rpx;
+  height: 56rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background: #00CD00;
+  margin-left: 10;
+  border-radius: 3px;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.btn-reset{
+  width: 136rpx;
+  height: 56rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background: #CDC5BF;
+  margin-left: 10;
+  border-radius: 3px;
+  line-height: 56rpx;
+  text-align: center;
+}

@@ -1,0 +1,127 @@
+<!--order-details.wxml-->
+<view class='order-details-top'>卖家{{orderlist.orderStatus}}</view>
+<!--地址-->
+<view class='order-addr'>
+  <image class='addr-arr' src="/assets/images/icon/arr.png"></image>
+  <view class='order-addr1'>
+    <text class='fs-30'>{{orderlist.userName}}</text>
+    <text>{{orderlist.mobile}}</text>
+  </view>
+  <view class='order-addr2'>{{orderlist.address}}</view>
+</view>
+<!--拼单成功-->
+<!-- <view class='order-collage bg-f mt20'>
+  <view class='order-collt'>
+    <text class='color-red'>拼单成功</text>
+    <text class='color-hui fs-24'>10人拼单</text>
+  </view>
+  <view class='collt-box1'>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/7.png'></image>
+    </view>
+  </view>
+</view> -->
+<!--拼单失败-->
+<!-- <view class='order-collage bg-f mt20'>
+  <view class='order-collt2'>
+    <view>
+      <view class='color-red fs-24'>还差3天拼成</view>
+      <view class='order-colltime' wx:for="{{countDownList}}" wx:key="countDownList">剩余{{orderlist.day}}天{{orderlist.hou}}小时{{orderlist.min}}分钟{{orderlist.sec}}秒</view>
+    </view>
+    <button class='order-button2'>邀请好友</button>
+  </view>
+  <view class='collt-box1'>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/10.jpg'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/7.png'></image>
+    </view>
+    <view class='collt-person'>
+      <image src='/assets/images/personal/8.png'></image>
+    </view>
+  </view>
+</view> -->
+<!--商品-->
+<view class='order-box2 bg-f mt20'>
+  <view class='order-good'>
+    <image class='order-img1' src='{{orderlist.productCover}}'></image>
+    <view class='order-attr'>
+      <view class='order-tit'>{{orderlist.productTitle}}</view>
+      <view class='order-attr2'>
+        <text>{{orderlist.productSkuAttributeValues}}</text>
+        <text class='order-num'>X{{orderlist.productCount}}</text>
+      </view>
+      <view class='orderr-price2'>
+        <view class='order-price'>￥{{orderlist.productPrice}}</view>
+        <text class='color-red'>申请售后</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--价格-->
+<view class='order-box5 bg-f mt20'>
+  <view class='order-box6'>
+    <view class='order-box7'>
+      <text>商品合计</text>
+      <text>￥{{orderlist.productCount}}</text>
+    </view>
+    <view class='order-box7'>
+      <text>运费</text>
+      <text>￥{{orderlist.freight}}</text>
+    </view>
+  </view>
+  <view class='order-box8'>
+    <text>支付总额</text>
+    <text class='price-style'>￥{{orderlist.orderTotalPrice}}</text>
+  </view>
+</view>
+<!--编号-->
+<view class='order-box6 bg-f mt20'>
+  <view>订单编号：{{orderlist.orderNo}}</view>
+  <view>下单时间：{{orderlist.createTime}}</view>
+</view>
+<!--底部-->
+<view class='hei-120'></view>
+<view class='order-box3 order-box4 bg-f'>
+  <view class='order-butt'>
+    <view class='order-button order-button-red'>立即付款</view>
+    <view class='order-button order-button-grey'>取消订单</view>
+  </view>
+</view>
