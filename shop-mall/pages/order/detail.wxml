@@ -1,0 +1,37 @@
+<!--pages/order/detail.wxml-->
+<view class="product">
+    <view class="product-image">
+      <image src="{{product.img}}"></image>
+    </view>
+    <view class="product-content">
+      <text class="product-title">{{product.title}}</text>
+      <view class="product-attr">
+        <block wx:for="{{product.attr}}" wx:key="item">
+          <text class="product-attr-name">{{item}}；</text>
+        </block>
+      </view>
+      <view class="product-price-num">
+        <text class="product-price">￥{{product.price}}</text>
+        <text class="product-num">× {{product.num}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="fee">
+    <view class="total-fee">
+      <text class="fee-title">商品合计</text>
+      <text class="fee-num">￥{{totalFee}}</text>
+    </view>
+    <view class="freight">
+      <text class="fee-title">运费</text>
+      <text class="fee-num">￥{{freight}}</text>
+    </view>
+  </view>
+  <view class="fixed-footer">
+    <view class="total-price">
+      合计金额：
+      <text class="footer-price">￥{{totalFee}}</text>
+    </view>
+    <view class="pay-btn" catch:tap="pay">
+      <text class="pay-btn-text">付款</text>
+    </view>
+  </view>
